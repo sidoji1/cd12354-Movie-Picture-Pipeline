@@ -31,8 +31,8 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          apt-get update
-          apt-get install -y python3.10-dev
+          sudo apt-get update
+          sudo apt-get install -y python3.10-dev
 
       - name: Install dependencies
         run: pipenv install --dev
@@ -61,8 +61,8 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          apt-get update
-          apt-get install -y python3.10-dev
+          sudo apt-get update
+          sudo apt-get install -y python3.10-dev
 
       - name: Install dependencies
         run: pipenv install --dev
